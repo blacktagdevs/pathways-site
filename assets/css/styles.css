@@ -1,5 +1,5 @@
 /**
- * Westover University Pathways Scholarship
+ * Pathways Scholarship
  * Main Stylesheet
  *
  * Table of Contents:
@@ -695,6 +695,11 @@ p {
   justify-content: center;
   font-size: var(--font-size-4xl);
   color: var(--color-medium-gray);
+}
+
+/* Hide placeholder icon when background-image is set */
+.bio-card__image--placeholder[style*="background-image: url"] span {
+  display: none;
 }
 
 .bio-card__content {
