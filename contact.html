@@ -74,78 +74,31 @@
       <div class="container">
         <div class="grid grid--2" style="align-items: start;">
 
-          <!-- Contact Form -->
+          <!-- Contact Info -->
           <div>
-            <h2>Send Us a Message</h2>
+            <h2>Get in Touch</h2>
             <p>
-              Use the form below to ask questions about the scholarship, application process,
-              eligibility, or anything else. We'll get back to you as soon as possible.
+              Have questions about the scholarship, application process, or eligibility?
+              We'd love to hear from you. Send us an email and we'll get back to you as soon as possible.
             </p>
 
-            <!-- Form Note -->
-            <div class="form__note">
-              <strong>Note:</strong> This form may require a backend to send email.
-              For now, please email us directly at
-              <a href="mailto:hello@scholarpathways.org"><strong>hello@scholarpathways.org</strong></a>
+            <!-- Email CTA -->
+            <div class="pathway-card" style="margin-top: var(--space-xl); text-align: center;">
+              <h3 style="display: flex; align-items: center; justify-content: center; gap: var(--space-sm);">
+                <span aria-hidden="true" style="font-size: 1.5rem;">&#9993;</span>
+                Email Us
+              </h3>
+              <p style="margin-bottom: var(--space-lg);">
+                Click the button below to send us an email. Be sure to include your name,
+                what school you attend, and any specific questions you have.
+              </p>
+              <a href="mailto:hello@scholarpathways.org?subject=Pathways%20Scholarship%20Inquiry" class="btn btn--primary btn--large">
+                Send Email
+              </a>
+              <p style="margin-top: var(--space-md); margin-bottom: 0; color: var(--color-text-muted); font-size: var(--font-size-sm);">
+                hello@scholarpathways.org
+              </p>
             </div>
-
-            <!-- Contact Form -->
-            <form class="form" action="#" method="POST" novalidate>
-              <div class="form__group">
-                <label for="name" class="form__label form__label--required">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form__input"
-                  placeholder="Enter your full name"
-                  required
-                  autocomplete="name"
-                >
-              </div>
-
-              <div class="form__group">
-                <label for="email" class="form__label form__label--required">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form__input"
-                  placeholder="Enter your email address"
-                  required
-                  autocomplete="email"
-                >
-                <p class="form__hint">We'll use this to respond to your message.</p>
-              </div>
-
-              <div class="form__group">
-                <label for="subject" class="form__label form__label--required">Subject</label>
-                <select id="subject" name="subject" class="form__select" required>
-                  <option value="">Select a subject...</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="eligibility">Eligibility Question</option>
-                  <option value="application">Application Process</option>
-                  <option value="essay">Essay Requirements</option>
-                  <option value="timeline">Timeline &amp; Deadlines</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form__group">
-                <label for="message" class="form__label form__label--required">Your Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form__textarea"
-                  placeholder="Write your message here..."
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">
-                Send Message
-              </button>
-            </form>
           </div>
 
           <!-- Contact Info Sidebar -->
