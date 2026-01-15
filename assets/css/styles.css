@@ -345,10 +345,9 @@ p {
 }
 
 .header__logo-img {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--border-radius);
-  background-color: var(--color-primary);
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Mobile menu toggle */
@@ -1169,6 +1168,19 @@ p {
 
 .footer__logo:hover {
   color: var(--color-secondary);
+}
+
+.footer__logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: opacity var(--transition-fast);
+}
+
+.footer__logo:hover .footer__logo-img {
+  opacity: 1;
 }
 
 .footer__tagline {
