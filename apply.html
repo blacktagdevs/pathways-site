@@ -79,51 +79,13 @@
           information about the full application process, including essay requirements and interview details.
         </div>
 
-        <form class="form" id="application-form">
-          <div class="form__group">
-            <label for="first-name" class="form__label form__label--required">First Name</label>
-            <input type="text" id="first-name" name="First_Name" class="form__input" required placeholder="Enter your first name">
-          </div>
-
-          <div class="form__group">
-            <label for="last-name" class="form__label form__label--required">Last Name</label>
-            <input type="text" id="last-name" name="Last_Name" class="form__input" required placeholder="Enter your last name">
-          </div>
-
-          <div class="form__group">
-            <label for="email" class="form__label form__label--required">Email Address</label>
-            <input type="email" id="email" name="Email" class="form__input" required placeholder="Enter your email address">
-            <p class="form__hint">We'll use this email to contact you about your application.</p>
-          </div>
-
-          <div class="form__group">
-            <label for="phone" class="form__label form__label--required">Phone Number</label>
-            <input type="tel" id="phone" name="Phone" class="form__input" required placeholder="(555) 555-5555">
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Submit Application</button>
-        </form>
-
-        <!-- Success Message (hidden by default) -->
-        <div id="form-success" class="form__success" style="display: none;">
-          <div class="info-card" style="text-align: center; padding: var(--space-2xl);">
-            <div class="info-card__icon" aria-hidden="true">&#10003;</div>
-            <h3 class="info-card__title">Application Submitted!</h3>
-            <p class="text-muted">
-              Thank you for your interest in the Pathways Scholarship. We've received your application
-              and will be in touch soon with next steps.
-            </p>
-            <a href="index.html" class="btn btn--outline" style="margin-top: var(--space-lg);">Return to Home</a>
-          </div>
-        </div>
-
-        <!-- Error Message (hidden by default) -->
-        <div id="form-error" class="form__error" style="display: none;">
-          <div class="form__note" style="border-left-color: var(--color-error); background-color: #fef2f2;">
-            <strong>Error:</strong> There was a problem submitting your application. Please try again or
-            <a href="contact.html">contact us</a> for assistance.
-          </div>
-        </div>
+        <!-- Zoho Forms Integration -->
+        <iframe
+          aria-label="Pathways Scholarship Application"
+          frameborder="0"
+          style="height: 600px; width: 100%; border: none; border-radius: var(--border-radius-lg); background: var(--color-white);"
+          src="https://forms.zohopublic.com/teamblackt1/form/Test/formperma/UdpErOoaOVHoHmPHqyiUycTeBd_6JWcgpHDVKjAxpaQ">
+        </iframe>
       </div>
     </section>
 
@@ -173,58 +135,5 @@
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
-  <script>
-    // Application Form Submission - Zoho CRM Integration
-    document.getElementById('application-form').addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      const form = e.target;
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const formSuccess = document.getElementById('form-success');
-      const formError = document.getElementById('form-error');
-
-      // Disable button and show loading state
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Submitting...';
-
-      // Hide any previous messages
-      formSuccess.style.display = 'none';
-      formError.style.display = 'none';
-
-      // Gather form data
-      const formData = {
-        First_Name: form.querySelector('#first-name').value,
-        Last_Name: form.querySelector('#last-name').value,
-        Email: form.querySelector('#email').value,
-        Phone: form.querySelector('#phone').value
-      };
-
-      try {
-        // TODO: Replace with your Zoho CRM API endpoint and authentication
-        // Example Zoho CRM API call structure:
-        // const response = await fetch('https://www.zohoapis.com/crm/v2/Contacts', {
-        //   method: 'POST',
-        //   headers: {
-        //     'Authorization': 'Zoho-oauthtoken YOUR_ACCESS_TOKEN',
-        //     'Content-Type': 'application/json'
-        //   },
-        //   body: JSON.stringify({ data: [formData] })
-        // });
-
-        // For now, simulate success (remove this when integrating with Zoho)
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
-        // Show success message and hide form
-        form.style.display = 'none';
-        formSuccess.style.display = 'block';
-
-      } catch (error) {
-        console.error('Form submission error:', error);
-        formError.style.display = 'block';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit Application';
-      }
-    });
-  </script>
 </body>
 </html>
