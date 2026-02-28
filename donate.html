@@ -57,48 +57,47 @@
   <main id="main-content">
 
     <!-- ========================================
-         DONATE HERO + FORM
+         DONATE HERO
          ======================================== -->
     <section class="donate-hero">
-      <div class="container">
-        <div class="donate-layout">
+      <div class="donate-hero__content">
+        <p class="donate-hero__eyebrow">Make an Impact</p>
+        <h1 class="donate-hero__title">Invest in a Student's Future</h1>
+        <p class="donate-hero__quote">"Each Journey Starts with a Step" — and sometimes, that step needs a hand.</p>
+        <p class="donate-hero__body">
+          Your donation directly funds $1,000 scholarships for graduating seniors at Westover High School.
+          Every contribution helps a student take the next step toward higher education.
+        </p>
 
-          <!-- Left: Messaging -->
-          <div class="donate-messaging">
-            <h1 class="donate-heading">Invest in a Student's Future</h1>
-            <p class="donate-lead">
-              "Each Journey Starts with a Step" — and sometimes, that step needs a hand.
-            </p>
-            <p class="donate-body">
-              Your donation directly funds $1,000 scholarships for graduating seniors at Westover High School.
-              Every contribution — no matter the size — helps a student take that next step toward higher education.
-            </p>
-            <div class="donate-stats">
-              <div class="donate-stat">
-                <span class="donate-stat__value">$1,000</span>
-                <span class="donate-stat__label">Per Award</span>
-              </div>
-              <div class="donate-stat">
-                <span class="donate-stat__value">5</span>
-                <span class="donate-stat__label">Students per Year</span>
-              </div>
-              <div class="donate-stat">
-                <span class="donate-stat__value">100%</span>
-                <span class="donate-stat__label">Goes to Students</span>
-              </div>
-            </div>
+        <!-- DonorBox Popup Button -->
+        <div class="donate-hero__cta">
+          <script type="module" src="https://donorbox.org/widgets.js" async></script>
+          <dbox-widget
+            campaign="2026-pathways-scholarship"
+            type="popup"
+            button-label="Donate Now"
+            button-type="regular"
+            button-color="#1e3a5f"
+            button-size="medium"
+            regular-position="left"
+            show-icon="">
+          </dbox-widget>
+        </div>
+
+        <!-- Stats -->
+        <div class="donate-stats">
+          <div class="donate-stat">
+            <span class="donate-stat__value">$1,000</span>
+            <span class="donate-stat__label">Per Award</span>
           </div>
-
-          <!-- Right: DonorBox Widget -->
-          <div class="donate-form">
-            <script type="module" src="https://donorbox.org/widgets.js" async></script>
-            <dbox-widget
-              campaign="2026-pathways-scholarship"
-              type="donation_form"
-              enable-auto-scroll="true">
-            </dbox-widget>
+          <div class="donate-stat">
+            <span class="donate-stat__value">5</span>
+            <span class="donate-stat__label">Students per Year</span>
           </div>
-
+          <div class="donate-stat">
+            <span class="donate-stat__value">100%</span>
+            <span class="donate-stat__label">Goes to Students</span>
+          </div>
         </div>
       </div>
     </section>

@@ -1093,39 +1093,39 @@ p {
    ========================================================================== */
 
 .donate-hero {
-  background-color: var(--color-off-white);
-  padding: var(--space-4xl) 0;
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-4xl) var(--space-md);
+  background-color: var(--color-primary);
+  background-image: linear-gradient(rgba(30, 58, 95, 0.92), rgba(30, 58, 95, 0.96));
+  color: var(--color-white);
 }
 
-.donate-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-3xl);
-  align-items: start;
+.donate-hero__content {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-@media (min-width: 900px) {
-  .donate-layout {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
+.donate-hero__eyebrow {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-md);
 }
 
-.donate-messaging {
-  padding: var(--space-xl) 0;
-}
-
-.donate-heading {
-  font-size: var(--font-size-3xl);
-  color: var(--color-primary);
+.donate-hero__title {
+  font-size: var(--font-size-4xl);
+  color: var(--color-white);
   margin-bottom: var(--space-lg);
   line-height: var(--line-height-tight);
 }
 
-.donate-lead {
+.donate-hero__quote {
   font-size: var(--font-size-lg);
   font-family: var(--font-family-heading);
   font-style: italic;
@@ -1134,18 +1134,25 @@ p {
   line-height: var(--line-height-loose);
 }
 
-.donate-body {
+.donate-hero__body {
   font-size: var(--font-size-md);
-  color: var(--color-dark-gray);
+  color: rgba(255, 255, 255, 0.85);
   line-height: var(--line-height-loose);
   margin-bottom: var(--space-2xl);
 }
 
+.donate-hero__cta {
+  margin-bottom: var(--space-3xl);
+  display: flex;
+  justify-content: center;
+}
+
 .donate-stats {
   display: flex;
-  gap: var(--space-xl);
-  padding-top: var(--space-xl);
-  border-top: 2px solid var(--color-light-gray);
+  justify-content: center;
+  gap: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .donate-stat {
@@ -1163,17 +1170,9 @@ p {
 
 .donate-stat__label {
   font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-.donate-form {
-  background: var(--color-white);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  padding: var(--space-xl);
 }
 
 /* CTA Section */
