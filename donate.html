@@ -57,64 +57,48 @@
   <main id="main-content">
 
     <!-- ========================================
-         PAGE HEADER
+         DONATE HERO + FORM
          ======================================== -->
-    <section class="section section--primary">
+    <section class="donate-hero">
       <div class="container">
-        <div class="section__header">
-          <h1 class="section__title">Make a Difference</h1>
-          <p class="section__subtitle" style="color: rgba(255,255,255,0.9);">
-            Your contribution directly funds scholarships for Westover High School seniors pursuing higher education.
-          </p>
-        </div>
-      </div>
-    </section>
+        <div class="donate-layout">
 
-    <!-- ========================================
-         IMPACT SECTION
-         ======================================== -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="grid grid--3">
-          <div class="info-card">
-            <div class="info-card__icon" aria-hidden="true">&#127891;</div>
-            <h3 class="info-card__title">Per Scholarship</h3>
-            <p class="info-card__value">$1,000</p>
+          <!-- Left: Messaging -->
+          <div class="donate-messaging">
+            <h1 class="donate-heading">Invest in a Student's Future</h1>
+            <p class="donate-lead">
+              "Each Journey Starts with a Step" — and sometimes, that step needs a hand.
+            </p>
+            <p class="donate-body">
+              Your donation directly funds $1,000 scholarships for graduating seniors at Westover High School.
+              Every contribution — no matter the size — helps a student take that next step toward higher education.
+            </p>
+            <div class="donate-stats">
+              <div class="donate-stat">
+                <span class="donate-stat__value">$1,000</span>
+                <span class="donate-stat__label">Per Award</span>
+              </div>
+              <div class="donate-stat">
+                <span class="donate-stat__value">5</span>
+                <span class="donate-stat__label">Students per Year</span>
+              </div>
+              <div class="donate-stat">
+                <span class="donate-stat__value">100%</span>
+                <span class="donate-stat__label">Goes to Students</span>
+              </div>
+            </div>
           </div>
-          <div class="info-card">
-            <div class="info-card__icon" aria-hidden="true">&#127775;</div>
-            <h3 class="info-card__title">Awards Per Year</h3>
-            <p class="info-card__value">5 Students</p>
-          </div>
-          <div class="info-card">
-            <div class="info-card__icon" aria-hidden="true">&#129309;</div>
-            <h3 class="info-card__title">100% Goes To</h3>
-            <p class="info-card__value">Students</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ========================================
-         DONATION FORM
-         ======================================== -->
-    <section class="section">
-      <div class="container container--narrow">
-        <div class="section__header">
-          <h2 class="section__title">Support a Student's Journey</h2>
-          <p class="section__subtitle">
-            Every dollar contributed goes directly toward scholarship awards. Help us open doors for the next generation.
-          </p>
-        </div>
+          <!-- Right: DonorBox Widget -->
+          <div class="donate-form">
+            <script type="module" src="https://donorbox.org/widgets.js" async></script>
+            <dbox-widget
+              campaign="2026-pathways-scholarship"
+              type="donation_form"
+              enable-auto-scroll="true">
+            </dbox-widget>
+          </div>
 
-        <!-- DonorBox Widget -->
-        <div style="display: flex; justify-content: center;">
-          <script type="module" src="https://donorbox.org/widgets.js" async></script>
-          <dbox-widget
-            campaign="2026-pathways-scholarship"
-            type="donation_form"
-            enable-auto-scroll="true">
-          </dbox-widget>
         </div>
       </div>
     </section>
