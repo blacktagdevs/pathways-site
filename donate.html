@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apply for the Pathways Scholarship - Submit your application to be considered for one of five $1,000 awards.">
-  <meta name="keywords" content="scholarship application, apply, Westover High School, education funding">
-  <title>Apply Now | Pathways Scholarship</title>
+  <meta name="description" content="Support the Pathways Scholarship - your donation helps fund $1,000 awards for Westover High School seniors pursuing higher education.">
+  <meta name="keywords" content="donate, scholarship, support, Westover High School, education funding">
+  <title>Donate | Pathways Scholarship</title>
 
-  <!-- Favicon (placeholder) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 
   <!-- Stylesheet -->
@@ -43,8 +43,8 @@
             <li><a href="about.html" class="nav__link">About Us</a></li>
             <li><a href="scholarship.html" class="nav__link">Scholarship Details</a></li>
             <li><a href="contact.html" class="nav__link">Contact Us</a></li>
-            <li><a href="apply.html" class="nav__link nav__link--active" aria-current="page">Apply Now</a></li>
-            <li><a href="donate.html" class="nav__link">Donate</a></li>
+            <li><a href="apply.html" class="nav__link">Apply Now</a></li>
+            <li><a href="donate.html" class="nav__link nav__link--active" aria-current="page">Donate</a></li>
           </ul>
         </nav>
       </div>
@@ -62,32 +62,60 @@
     <section class="section section--primary">
       <div class="container">
         <div class="section__header">
-          <h1 class="section__title">Apply Now</h1>
+          <h1 class="section__title">Make a Difference</h1>
           <p class="section__subtitle" style="color: rgba(255,255,255,0.9);">
-            Take the first step toward your future. Submit your interest to be considered for the Pathways Scholarship.
+            Your contribution directly funds scholarships for Westover High School seniors pursuing higher education.
           </p>
         </div>
       </div>
     </section>
 
     <!-- ========================================
-         APPLICATION FORM
+         IMPACT SECTION
+         ======================================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="grid grid--3">
+          <div class="info-card">
+            <div class="info-card__icon" aria-hidden="true">&#127891;</div>
+            <h3 class="info-card__title">Per Scholarship</h3>
+            <p class="info-card__value">$1,000</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon" aria-hidden="true">&#127775;</div>
+            <h3 class="info-card__title">Awards Per Year</h3>
+            <p class="info-card__value">5 Students</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon" aria-hidden="true">&#129309;</div>
+            <h3 class="info-card__title">100% Goes To</h3>
+            <p class="info-card__value">Students</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         DONATION FORM
          ======================================== -->
     <section class="section">
       <div class="container container--narrow">
-        <div class="form__note">
-          <strong>Note:</strong> This is an application of interest. After submitting, qualified applicants will receive
-          information about the full application process, including essay requirements and interview details.
+        <div class="section__header">
+          <h2 class="section__title">Support a Student's Journey</h2>
+          <p class="section__subtitle">
+            Every dollar contributed goes directly toward scholarship awards. Help us open doors for the next generation.
+          </p>
         </div>
 
-        <!-- Zoho Forms Integration -->
-        <iframe
-          aria-label="Pathways Scholarship Application"
-          frameborder="0"
-          scrolling="no"
-          style="height: 800px; width: 100%; border: none; border-radius: var(--border-radius-lg); background: var(--color-white); overflow: hidden;"
-          src="https://forms.zohopublic.com/teamblackt1/form/Test/formperma/UdpErOoaOVHoHmPHqyiUycTeBd_6JWcgpHDVKjAxpaQ">
-        </iframe>
+        <!-- DonorBox Widget -->
+        <div style="display: flex; justify-content: center;">
+          <script type="module" src="https://donorbox.org/widgets.js" async></script>
+          <dbox-widget
+            campaign="2026-pathways-scholarship"
+            type="donation_form"
+            enable-auto-scroll="true">
+          </dbox-widget>
+        </div>
       </div>
     </section>
 
@@ -116,6 +144,7 @@
             <li><a href="scholarship.html">Scholarship Details</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="apply.html">Apply Now</a></li>
+            <li><a href="donate.html">Donate</a></li>
           </ul>
         </div>
 
